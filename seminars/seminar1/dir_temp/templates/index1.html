@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Это фласк страница</title>
+</head>
+<body>
+{% block head %}
+<h1>Main Page</h1>
+
+
+<h5>head</h5>
+
+
+<h2>my name {{ name }}</h2>
+<h3>its my {{title}}</h3>
+
+{% endblock %}
+<h4>{% for item in value %}</h4>
+
+{% if item%2 !=0 %}
+<h4>non print</h4>
+
+{% else %}
+{{ item }}
+{% endif %}
+<br>_______<br>
+{% endfor %}
+
+{% block tail %}
+<h1>tail</h1>
+{% endblock %}
+
+
+</body>
+</html>

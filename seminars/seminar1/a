@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <td>Имя</td>
+    <td>Фамилия</td>
+    <td>Возраст</td>
+    <td>Средний балл</td>
+  </tr>
+    {% for student in students %}
+    <tr>
+    <td>{{ student.firstname }}</td>
+    <td>{{ student.lastname }}</td>
+    <td>{{ student.age }}</td>
+    <td>{{ student.rate }}</td>
+  </tr>
+    {% endfor %}
+</table>
+</body>
+
+
+students = [
+    {"firstname": "Иван","lastname": "Иванов",'age': 20, 'rate': 4.5},
+    {"firstname": "Иван","lastname": "Иванов",'age': 20, 'rate': 4.5},
+    {"firstname": "Иван","lastname": "Иванов",'age': 20, 'rate': 4.5},
+    {"firstname": "Иван","lastname": "Иванов",'age': 20, 'rate': 4.5}
+]
+
+@app.route('/student/')
+def get_studets():
+    return render_template("students.html", students= students)

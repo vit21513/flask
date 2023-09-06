@@ -1,0 +1,61 @@
+*{
+margin:0;
+padding: 0;
+}
+
+
+
+.header {
+  height: 100px;
+  background-color: #ccc;
+  margin-bottom: 150px;
+
+ }
+
+.content  {
+
+  display: flex;
+
+
+}
+
+
+
+ .item  {
+
+  width: 350px;
+  height: 350px;
+  border: 1px solid #000;
+  color: blue;
+  font-style: italic;
+  margin-top: 150px;
+  font-size:20pt;
+  
+  
+ }
+
+ .footer{
+
+  height: 100px;
+  background-color: #ccc;
+  margin-top: 150px;
+
+
+
+ }
+
+ .container {
+  width: 1200px;
+  margin: auto;
+
+
+ }
+
+ .item-flex {
+
+  display: flex;
+  justify-content: space-around;
+  height: 500;
+  align-items: center;
+
+ }

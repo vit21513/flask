@@ -1,0 +1,76 @@
+
+.main-text {
+
+color: rgb(128, 0, 26);
+font-size: 25pt;
+
+
+}
+
+div b, div i{
+    color: green;
+    font-size: 25pt;
+}
+
+/* label */
+
+.main-link {
+
+    color: blue;
+    text-decoration: none;
+}
+
+.main-link:hover {
+
+    color: brown;
+
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+    cursor: pointer
+}
+
+.main-link:active{
+
+    text-decoration: line-through;
+}
+.main-link:visited{
+    
+    color: rgb(56, 23, 133);
+}
+input{color: blue;}
+input:focus{color: brown}
+
+
+p.text:empty::after {
+    content: attr(tittle);
+    
+
+
+}p.text:not(:empty){
+    color: rgb(242, 25, 25);
+}
+
+#some_id::after{
+   
+    content: "oops";
+    color: red;
+    text-decoration: line-through;
+
+}
+
+#some_id::before{
+   
+    content: "before";
+    color: rgb(60, 54, 93);
+    text-decoration:overline;
+
+}
+
+p.main-link::first-line{
+    color: green;
+}
+
+p:last-of-type {
+
+    text-decoration: line-through;
+}
